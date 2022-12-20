@@ -38,6 +38,7 @@ modes = [
 ] 
 ```
 For app name, always use the static part of the app name, so for example this is visual studio title `? README.md - shortcuts - Visual Studio Code`, I picked `Visual Studio` as the app name
+
 Also you can use autohotkey.com to create a keybinding for each mode
 
 ```
