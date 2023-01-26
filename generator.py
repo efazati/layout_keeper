@@ -2,7 +2,7 @@ from config_4k_2k import modes, positions
 
 def header_render():
     return """@echo off
-%ERRORLEVEL%==0
+set %ERRORLEVEL%=0
 
 cmdow /ma"""
 
@@ -11,7 +11,7 @@ def apps_render(mode):
     for app in mode['apps']:
         pos = positions[app['pos']]
         template = f"""
-## {app['pos']}
+REM {app['pos']}
 cmdow "*{app['name']}*" /Res
 cmdow "*{app['name']}*" /mov {pos['pos'][0]} {pos['pos'][1]}
 cmdow "*{app['name']}*" /siz {pos['siz'][0]} {pos['siz'][1]}
