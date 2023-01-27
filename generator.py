@@ -2,7 +2,7 @@ from config_4k_2k import modes, positions
 
 def header_render():
     return """@echo off
-%ERRORLEVEL%==0
+cd . REM reset %ERRORLEVEL%
 
 cmdow /ma"""
 
